@@ -1,0 +1,612 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #e3e6e6;
+    color: #111;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    gap: 5px;
+}
+
+.border {
+    border: 1.5px solid transparent;
+}
+
+.border:hover {
+    border: 1.5px solid white;
+}
+
+
+/* LOGO */
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 50px;
+    width: 100%;
+}
+
+
+/* =========================
+   ADDRESS
+========================= */
+
+.nav-address {
+    padding: 5px 8px;
+}
+
+.add-first {
+    color: #cccccc;
+    font-size: 0.75rem;
+    margin-left: 15px;
+}
+
+.add-sec {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.nav-search {
+    display: flex;
+    width: 620px;
+    height: 40px;
+
+    background-color: white;
+    border-radius: 4px;
+
+    overflow: hidden;
+}
+
+.search-select {
+    background-color: #e6e6e6;
+
+    width: 55px;
+    padding: 0 5px;
+
+    text-align: center;
+
+    border: none;
+    outline: none;
+
+    color: #333;
+}
+
+.search-input {
+    flex: 1;
+
+    padding: 0 10px;
+
+    font-size: 1rem;
+
+    border: none;
+    outline: none;
+}
+
+.search-icon {
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #febd68;
+
+    color: #0f1111;
+
+    font-size: 1.2rem;
+}
+
+.nav-search:hover {
+    outline: 2px solid #ff9900;
+}
+
+
+/* =========================
+   SIGN IN / RETURNS
+========================= */
+
+.nav-signin,
+.nav-return {
+    padding: 7px;
+}
+
+.nav-signin span,
+.nav-return span {
+    font-size: 0.7rem;
+}
+
+.nav-second {
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   CART
+========================= */
+
+.nav-cart {
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    padding: 10px;
+}
+
+.nav-cart i {
+    font-size: 25px;
+    margin-right: 3px;
+}
+
+
+/* =========================
+   SECOND NAVIGATION PANEL
+========================= */
+
+.panel {
+    height: 40px;
+
+    background-color: #222f3d;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+}
+
+.panel-all {
+    padding: 10px 15px;
+
+    font-weight: 700;
+}
+
+.panel-all i {
+    margin-right: 5px;
+}
+
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-ops p {
+    display: inline;
+    margin-left: 15px;
+}
+
+.panel-deals {
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 400px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hero-msg {
+    background-color: white;
+    color: black;
+
+    width: 80%;
+    min-height: 40px;
+
+    margin-bottom: 25px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    font-size: 0.85rem;
+}
+
+.hero-msg a {
+    color: #007185;
+    text-decoration: none;
+}
+
+.hero-msg a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   SHOP SECTION
+========================= */
+
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    background-color: #e3e6e6;
+
+    padding: 10px 0;
+}
+
+
+/* PRODUCT BOX */
+
+.box {
+    width: 23%;
+
+    min-height: 400px;
+
+    background-color: white;
+
+    padding: 20px 15px 15px;
+
+    margin: 10px 0;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.box-content h2 {
+    font-size: 1.3rem;
+}
+
+
+/* BOX IMAGE */
+
+.box-img {
+    height: 300px;
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* SEE MORE */
+
+.box-content a {
+    color: #007185;
+
+    font-size: 0.9rem;
+
+    text-decoration: none;
+}
+
+.box-content a:hover {
+    color: #c7511f;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 15px;
+}
+
+
+/* BACK TO TOP */
+
+.foot-panel1 {
+    height: 50px;
+
+    background-color: #37475a;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.85rem;
+
+    cursor: pointer;
+}
+
+.foot-panel1:hover {
+    background-color: #485769;
+}
+
+
+/* FOOTER LINKS */
+
+.foot-panel2 {
+    background-color: #232f3e;
+
+    color: white;
+
+    min-height: 300px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    padding: 40px 20px;
+}
+
+.foot-panel2 ul {
+    list-style: none;
+    width: 20%;
+}
+
+.foot-panel2 li {
+    color: #dddddd;
+
+    font-size: 0.85rem;
+
+    margin-top: 10px;
+}
+
+.foot-panel2 .footer-heading {
+    color: white;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+/* FOOTER LOGO */
+
+.foot-panel3 {
+    background-color: #232f3e;
+
+    height: 80px;
+
+    border-top: 1px solid #3a4553;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gogo {
+    width: 100px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   FOOTER BOTTOM
+========================= */
+
+.foot-panel4 {
+    background-color: #131a22;
+
+    color: white;
+
+    min-height: 80px;
+
+    font-size: 0.7rem;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.pages {
+    margin-bottom: 10px;
+}
+
+.pages a {
+    color: white;
+
+    margin: 0 10px;
+
+    text-decoration: none;
+}
+
+.pages a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    color: #dddddd;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+
+    .nav-search {
+        width: 40%;
+    }
+
+    .nav-address {
+        display: none;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .panel-deals {
+        display: none;
+    }
+
+    .panel-ops {
+        width: 80%;
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: auto;
+        min-height: 110px;
+
+        flex-wrap: wrap;
+
+        padding: 5px;
+    }
+
+    .nav-logo {
+        width: 90px;
+    }
+
+    .nav-signin,
+    .nav-return {
+        display: none;
+    }
+
+    .nav-search {
+        order: 5;
+
+        width: 100%;
+        margin: 5px;
+    }
+
+    .panel {
+        height: auto;
+
+        padding: 10px;
+
+        flex-wrap: wrap;
+    }
+
+    .panel-ops {
+        width: 100%;
+
+        overflow: hidden;
+        white-space: nowrap;
+
+        margin-top: 8px;
+    }
+
+    .panel-ops p {
+        margin-left: 8px;
+        font-size: 0.75rem;
+    }
+
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-msg {
+        width: 95%;
+        font-size: 0.75rem;
+    }
+
+    .box {
+        width: 46%;
+        min-height: 300px;
+
+        padding: 12px;
+    }
+
+    .box-content h2 {
+        font-size: 1rem;
+    }
+
+    .box-img {
+        height: 200px;
+    }
+
+    .foot-panel2 {
+        flex-wrap: wrap;
+        padding: 30px 10px;
+    }
+
+    .foot-panel2 ul {
+        width: 45%;
+        margin-bottom: 25px;
+    }
+
+}
+
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+
+    .box {
+        width: 95%;
+    }
+
+    .box-img {
+        height: 250px;
+    }
+
+    .foot-panel2 ul {
+        width: 90%;
+    }
+
+}
